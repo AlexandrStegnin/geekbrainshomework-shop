@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <br>
-    <ul>
+    <ul class="menu">
         <li>
             <a href="index.html">Главная</a>
         </li>
@@ -21,16 +22,27 @@
     <form>
         <fieldset>
             <legend>Напишите нам</legend>
-            <label for="userName">Ваше имя</label>
-            <input type="text" required id="userName">*<br>
-            <label for="email">Ваш email</label>
-            <input type="email" required id="email" placeholder="email@example.com">*<br>
-            <label for="phone">Телефон</label>
-            <input type="tel" id="phone"><br>
-            <label for="subject">Тема сообщения</label>
-            <input type="text" id="subject"><br>
-            <label for="letter">Текст сообщения</label>*<br>
-            <textarea id="letter" rows="20" cols="40" required></textarea><br>
+            <div class="block">
+                <label for="userName">Ваше имя</label>
+                <input type="text" required id="userName">*<br>
+            </div>
+            <div class="block">
+                <label for="email">Ваш email</label>
+                <input type="email" required id="email" placeholder="email@example.com">*<br>
+            </div>
+            <div class="block">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone"><br>
+            </div>
+            <div class="block">
+                <label for="subject">Тема сообщения</label>
+                <input type="text" id="subject"><br>
+            </div>
+            <div class="block">
+                <label for="letter">Текст сообщения</label>*<br><br>
+                <textarea id="letter" rows="20" cols="40" required></textarea><br>
+            </div>
+
             <input type="submit" value="Отправить">
         </fieldset>
     </form>
