@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример таблицы</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <table class="example">
+        <caption>Пример таблицы</caption>
+        <tbody>
+            <tr>
+                <td>Первая ячейка</td>
+                <td>Вторая ячейка</td>
+                <td>Третья ячейка</td>
+                <td>Четвёртая ячейка</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Пятая ячейка</td>
+                <td>Шестая ячейка</td>
+                <td>Седьмая ячейка</td>
+                <td>Восьмая ячейка</td>
+            </tr>
+            <tr>
+                <td colspan="3">Девятая ячейка</td>
+            </tr>
+            <tr>
+                <td rowspan="2" colspan="3">Первая ячейка</td>
+                <td>Первая ячейка</td>
+            </tr>
+            <tr>
+                <td>Первая ячейка</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
