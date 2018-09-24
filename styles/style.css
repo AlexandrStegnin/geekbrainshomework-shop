@@ -11,21 +11,40 @@ body > h1 {
     font-family: "South Park Cyrillic", serif;
 }
 
-.menu > li > a {
-    color: olive;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-decoration: none;
+.menu ul {
+    margin: 0 auto;
 }
 
-.menu > li {
+.menu li > a {
+    display: inline-block;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffc942;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+.menu li {
     list-style: none;
     display: inline;
-    padding-left: 20px;
 }
 
-.menu > li a:hover {
-    color: #000;
+.menu li a:hover {
+    color: #383c74;
+    border-color: #383c74;
+}
+
+.menu {
+    width: 400px;
+    float: right;
+    padding: 0;
+    height: 50px;
+    margin-top: 25px;
 }
 
 h4 {
@@ -40,6 +59,11 @@ h4 {
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+
+    overflow: hidden;
+    padding-left: 10px;
+    height: 100%;
+    position: relative;
 }
 
 .fullDescription {
@@ -110,6 +134,7 @@ textarea#letter {
 .header {
     height: 100px;
     position: relative;
+    background: url("../images/bg.png");
 }
 
 .header > img {
@@ -120,6 +145,10 @@ textarea#letter {
     position: absolute;
     top: 25%;
     left: 100px;
+}
+
+.logo {
+    margin-left: 20px;
 }
 
 .footer {
@@ -135,6 +164,7 @@ textarea#letter {
 .footer > span {
     position: absolute;
     top: 20px;
+    right: 20px;
 }
 
 #email:focus {
@@ -158,6 +188,66 @@ textarea#letter {
 p::first-letter {
     font-size: 20px;
     color: #1e90ff;
+}
+
+.container {
+    width: 80%;
+    min-height: 600px;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    float: left;
+}
+
+.mainWrapper {
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+}
+
+.buyButton {
+    display: inline-block;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffc942;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    opacity: 0.5;
+    float: right;
+    position: relative;
+    top: 30%;
+    right: 10px;
+}
+
+.buyButton:hover {
+    color: #383c74;
+    border-color: #383c74;
+}
+
+.buyButton:active {
+    color: #741700;
+    border-color: #741700;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexDiv {
+    text-align: center;
+    text-wrap: avoid;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 20%;
 }
 
 .example {
